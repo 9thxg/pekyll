@@ -1,2 +1,2 @@
 def build():
-    print('pekyll build')
+    print('pekyll build!')

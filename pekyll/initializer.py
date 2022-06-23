@@ -1,2 +1,2 @@
 def intialize():
-    print('pekyll init')
+    print('pekyll init!')
