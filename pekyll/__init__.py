@@ -10,19 +10,18 @@ def main(argv=None):
         title="sub commands", dest="sub_commands", required=True
     )
 
-    # flit init ----------------------------------------
+    # pekyll init ----------------------------------------
     parser_init = sub_parsers.add_parser(
         "init", help="Initialize directory for github pages using pekyll"
     )
-    
-    parser_init.add_argument(
-        "--root", type=str, default='.', help="Specifies the directory to initialize"
-    )
 
-    # flit build ---------------------------------------
+    # pekyll build ---------------------------------------
     parser_build = sub_parsers.add_parser(
         "build", help="Build a static website using pekyll"
     )
+    
+    # positional argument --------------------------------
+    parser.add_argument("SRC", type=str, default='.', help="Root directory to work with")
 
     args = parser.parse_args(argv)
 
