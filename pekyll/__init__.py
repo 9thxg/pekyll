@@ -27,7 +27,7 @@ def main(argv=None):
 
     if args.sub_commands == "init":
         from .initializer import intialize
-        intialize()
+        intialize(args.SRC)
     elif args.sub_commands == "build":
         from .builder import build
-        build()
+        build(args.SRC)

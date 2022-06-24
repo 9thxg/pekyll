@@ -1,2 +1,2 @@
-def intialize():
+def intialize(root: str) -> None:
     print('pekyll init')
